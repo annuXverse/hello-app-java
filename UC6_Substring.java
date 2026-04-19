@@ -1,0 +1,18 @@
+public class UC6_Substring {
+    public static void main(String[] args) {
+        // Goal: Use substring to remove trailing comma
+        if (args.length > 0) {
+            String greeting = "Hello ";
+            for (String name : args) {
+                greeting += name + ", "; // Har naam ke baad comma lagao
+            }
+
+            // Substring se aakhri ka ", " hatao (Length - 2)
+            greeting = greeting.substring(0, greeting.length() - 2);
+            
+            System.out.println(greeting);
+        } else {
+            System.out.println("Hello, World!");
+        }
+    }
+}
